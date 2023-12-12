@@ -1,0 +1,9 @@
+import numpy as np
+POSITIONS_BACK_LOW = [(0,0,0.9),(0,01.57,0.9)]
+POSITIONS_BACK_HIGH = [(0,0,1.5),(0,01.57,1.5)]
+POSITIONS_FRONT_LOW = [(0.82,0,0.9),(0.82,1.57,0.9)]
+POSITIONS_FRONT_HIGH = [(0.82,0,1.5),(0.82,1.57,1.5)]
+
+X_SEP = 0.87
+Y_SEP = 1.57
+Z_SEP = 0.6
