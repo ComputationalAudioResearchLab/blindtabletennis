@@ -9,6 +9,11 @@ import vispy.gloo
 import vispy.util.transforms
 import event_stream
 
+"""
+See Also:
+For more details, refer to the implementation in the neuromorphic-rs GitHub repository:
+https://github.com/neuromorphicsystems/neuromorphic-rs/blob/main/python/examples/any_display.py
+"""
 vispy.app.use_app(backend_name="glfw")
 
 biases = nd.prophesee_evk4.Biases(

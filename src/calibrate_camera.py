@@ -7,7 +7,6 @@ WIDTH = 1280
 HEIGHT = 720
 
 dirname = "/Volumes/T7/Calibration_data/"
-# dirname = "/Users/carlab/Documents/Phoebe_thesis/blindpingpong/src/calibration_images/"
 
 print("creating primary images")
 primary_images = create_calib_images(dirname + "primary/")

@@ -3,6 +3,10 @@ import numpy as np
 from .calibration import config
 
 def DLT(P1, P2, point1, point2):
+    """
+    See https://temugeb.github.io/opencv/python/2021/02/02/stereo-camera-calibration-and-triangulation.html
+    for details on implementation
+    """
  
     A = np.array([
         point1[1] * P1[2, :] - P1[1, :],

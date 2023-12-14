@@ -15,13 +15,13 @@ class DetectionDriver():
             return self.detect_ball(clusters)
         else:
             return self.track_ball(clusters)
-    '''
-    Method for detecting the ball based of stored previous position
-    If the detected ball is outside a threshold to the previous position, 
-    do no count it as the ball
-    '''
 
     def track_ball(self, clusters: List[np.ndarray]):
+        '''
+        Method for detecting the ball based of stored previous position
+        If the detected ball is outside a threshold to the previous position, 
+        do no count it as the ball
+        '''
         weight = float("inf")
         ball = None
         ball_centroid = None
@@ -47,12 +47,11 @@ class DetectionDriver():
 
         return self.centroid
 
-    '''
-    Method for detecting based on weight and threshold whether the ball is in view
-    Use when there is no previous tracking of ball ie: restarting ball tracking 
-    '''
-
     def detect_ball(self, clusters: List[np.ndarray]):
+        '''
+        Method for detecting based on weight and threshold whether the ball is in view
+        Use when there is no previous tracking of ball ie: restarting ball tracking 
+        '''
 
         weight = float("inf")
         ball = None

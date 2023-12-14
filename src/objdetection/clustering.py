@@ -66,6 +66,9 @@ def cluster_weight_measure(cluster: np.ndarray, mid_point: np.ndarray) -> float:
     #     f"area {area_est}, area_weight: {area_weight}, density_weight {density_weight}, diff {diff}, dist_weight {dist_weight}, size {cluster.size}")
     return density_weight + dist_weight + area_weight
 
+
+
+
 def weight_cluster_speaker(cluster):
     max_xy = np.max(cluster, axis=0)
     min_xy = np.min(cluster, axis=0)
@@ -93,8 +96,3 @@ def get_speaker_clusters(clusters):
     print(f"Chosen: Centroid: {cluster_centre},  weight: {weight}")
     
     return cluster_centre
-
-
-# [-7.54705005  0.59644436  7.65888463]
-
-# [-3.12273554  0.79054129  3.10630408]

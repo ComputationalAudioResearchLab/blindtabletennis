@@ -49,6 +49,7 @@ class EventStreamReaderOffline:
                 print("End of file")
                 return None
             if self.end_t is None:
+                # Streams usually dont start from timestamp 0 as has some elapsed time before recording
                 self.end_t = chunk["t"][0] + DURATION_SIZE
             
             if chunk["t"][-1] < self.end_t:
