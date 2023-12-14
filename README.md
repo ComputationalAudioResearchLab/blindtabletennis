@@ -4,7 +4,7 @@ Event camera and loud speaker system for assisted blind table tennis. This repos
 # Dependencies
 
 ## Python packages
-To get started, install the folowing python packages through pip
+To get started, install the following python packages through pip
 
 - neuromorphic_drivers
 - event_stream
@@ -17,10 +17,13 @@ To get started, install the folowing python packages through pip
 - cv2
 - sklearn
 
+## Event camera
+See https://github.com/neuromorphicsystems/neuromorphic-rs/tree/main for more detail on the event camera driver modules
+
 ## Hardware 
 
-Prophesee event camera (DVS gen 4)
-Loud speakers with ethernet connection (Configure channels with Dante)
+- Prophesee event camera (DVS gen 4)
+- Loud speakers with ethernet connection (Configure channels with Dante)
 
 
 # Documentation 
